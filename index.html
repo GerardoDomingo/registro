@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="Datos">
+        <h1>Registrar Usuario</h1>
+            <form action="./PHP/registro.php" id="frmregistro"  method="post" autocomplete="on">
+                 <label for="">Nombre completo</label>
+                 <input type="text" placeholder="Nombre" name="Nombre" required minlength="15" pattern="[A-Za-z]?+"><br>
+                 <label for="">Usuario</label> 
+                 <input type="text" name="User" placeholder="User"  required maxlength="12"><br>
+                 <label for="">Correo Electronico: </label>
+                 <input type="gmail" name="correo" id="correo" placeholder="gmail" required><br>
+                 <label for="">Fecha de nacimiento: </label>
+                 <input type="date" name="Fecha" id="fecha" required><br>
+                 <label for="">Número De Teléfono: </label>
+                 <input type="text" name="Numero" id="Numero" required minlength="10">
+                 <label for="">Contraseña: </label>
+                 <input type="password" placeholder="password" name="pss" id="password1" required><br>
+                 <label for="">Confirmar la  Contraseña: </label>
+                 <input type="password" placeholder="password" name="pass2" id="password2" required><br>
+                 <div class="contenedor">
+                 <button type="submit" title="Registrarse" name="Login">Registrarse</button><br>
+                </div>
+            </form>
+            <script src="./JS/validaregistro.js"></script>
+    </div>
+</body>
+</html>
